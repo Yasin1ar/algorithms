@@ -10,7 +10,6 @@ function chunk(arr, size) {
    * @returns {Array} An array of arrays, where each sub-array contains `size` elements.
    */
   let d = arr.length / size;
-  //   console.log("init d ", d);
   let baseArray = [];
   if (d < 1) {
     baseArray.push(arr);
@@ -18,17 +17,15 @@ function chunk(arr, size) {
   } else {
     while (d > 1) {
       baseArray.push(arr.slice(0, size));
-      //   console.log("base ", baseArray);
       arr = arr.slice(size);
-      //   console.log("arr ", arr);
       d = arr.length / size;
-      //   console.log("d ", d);
     }
     baseArray.push(arr);
     return baseArray;
   }
 }
 
+// Testing
 console.log(chunk([1, 2, 3, 4], 2));
 console.log(chunk([1, 2, 3, 4, 5], 2));
 console.log(chunk([1, 2, 3, 4, 5, 6, 7, 8], 3));
