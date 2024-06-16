@@ -18,7 +18,6 @@ function pyramid(n) {
   }
 }
 // testing output
-pyramid(2);
 pyramid(3);
 pyramid(9);
 pyramid(20);
