@@ -1,5 +1,5 @@
 # Python Tricks and Treats to Help Evade the Loop
-## This guide explores 30 Pythonic ways to avoid using for-loops, enhancing code readability and performance
+## This guide explores Pythonic ways to avoid using for-loops, enhancing code readability and performance
 
 
 I found these practices in an article by [Bobby Babazadeh](https://medium.com/@bobycloud/30-pythonic-ways-to-avoid-for-loops-a-decade-long-journey-best-practices-e0771cbab277).
