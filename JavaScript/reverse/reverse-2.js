@@ -2,17 +2,17 @@
 
 function reverse(param) {
   /* Gets a parameter, converts it to string if it's number, reverses the parameter using
-      loops and slicing method, stores it into a variable called reversedparam 
-      and eventually returns reversedparam */
+      loops and slicing method, stores it into a variable called reversedParam 
+      and eventually returns reversedParam */
 
   if (typeof param === "number") {
     param = param.toString();
   }
-  let reversedparam = "";
+  let reversedParam = "";
   for (let char of param) {
-    reversedparam = char + reversedparam;
+    reversedParam = char + reversedParam;
   }
-  return reversedparam;
+  return reversedParam;
 }
 
 console.log(reverse("Yasin")); // ---> nisaY
