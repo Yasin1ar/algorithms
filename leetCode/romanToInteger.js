@@ -29,3 +29,5 @@ function romanToInt(input = "I") {
   }
   return decoded;
 }
+
+module.exports = romanToInt;
