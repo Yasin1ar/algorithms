@@ -1,2 +1,10 @@
 **/.qodo
+**/.vscode
 .qodo
+.vscode
+**/*.json
+**/*.exe
+**/*.ts
+**/*config*
+**/*test*
+.vscode/
