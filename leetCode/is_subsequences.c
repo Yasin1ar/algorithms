@@ -5,22 +5,24 @@
 
 bool is_subsequence(char *s, char *t)
 {
-    if (*s == *t)
-    {
-        return true;
+    if (s == NULL || t == NULL) {
+        return false; // Both strings must be non-null
     }
 
-    int si = 0;
-    int sl = strlen(s);
-    for (int ti = 0; ti < sl - 1; ti++)
-    {
-        if (t[ti] == s[si])
-        {
+    int si = 0; 
+    int sl = strlen(s); 
+    int tl = strlen(t); 
+
+    for (int ti = 0; ti < tl; ti++) {
+        if (t[ti] == s[si]) {
             si++;
+            if (si == sl) {
+                break; // All characters in s have been found
+            }
         }
     }
 
-    return si == sl - 1;
+    return si == sl; // Return true if all characters in s were found in order
 }
 int main()
 {
