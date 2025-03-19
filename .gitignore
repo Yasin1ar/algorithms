@@ -4,6 +4,7 @@
 .vscode
 **/*.json
 **/*.exe
+**/.pytest_cache
 **/*.ts
 **/*config*
 # **/*test*
