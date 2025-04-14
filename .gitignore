@@ -13,3 +13,4 @@ node_modules
 .mypy_cache
 ./coverage
 **/__pycache__
+**/tests
