@@ -1,4 +1,4 @@
-function isSubsequenc(s, t) {
+function isSubsequences(s, t): Boolean {
   let si = 0;
   let ti = 0;
   const sl = s.length;
@@ -11,4 +11,4 @@ function isSubsequenc(s, t) {
 
   return si === sl;
 }
-module.exports = isSubsequenc;
+module.exports = isSubsequences;

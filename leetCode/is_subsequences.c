@@ -13,12 +13,9 @@ bool is_subsequence(char *s, char *t)
     int sl = strlen(s); 
     int tl = strlen(t); 
 
-    for (int ti = 0; ti < tl; ti++) {
+    for (int ti = 0; ti < tl && si < sl; ti++) {
         if (t[ti] == s[si]) {
             si++;
-            if (si == sl) {
-                break; // All characters in s have been found
-            }
         }
     }
 
@@ -26,8 +23,8 @@ bool is_subsequence(char *s, char *t)
 }
 int main()
 {
-    char s[] = "abc";
-    char t[] = "abc";
+    char s[] = "yasin";
+    char t[] = "ygalsissn";
 
     if (is_subsequence(s, t))
     {
