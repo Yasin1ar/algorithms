@@ -7,6 +7,9 @@
 **/.pytest_cache
 **/*.ts
 **/*config*
-# **/*test*
+**/*test*
 .vscode/
 node_modules
+.mypy_cache
+./coverage
+**/__pycache__
