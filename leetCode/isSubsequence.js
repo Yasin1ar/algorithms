@@ -1,4 +1,4 @@
-function isSubsequences(s, t): Boolean {
+function isSubsequences(s, t) {
   let si = 0;
   let ti = 0;
   const sl = s.length;
